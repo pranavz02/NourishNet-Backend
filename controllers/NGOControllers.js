@@ -83,3 +83,5 @@ const deliverFood = asyncHandler(async (req, res) => {
     await food.save()
     res.status(201).json({ food })
 })
+
+export { getFood, getAvailableFood, selectFood, deliverFood, inProcessFood, myFood }
